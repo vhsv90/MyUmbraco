@@ -303,14 +303,6 @@
     <Content Include="packages.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Macro.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Embed.cshtml" />
-    <Content Include="Views\Partials\Grid\Editors\Base.cshtml" />
-    <Content Include="Views\Partials\Grid\Bootstrap3.cshtml" />
-    <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Config\UrlRewriting.config" />
     <Content Include="Config\umbracoSettings.config" />
     <Content Include="Config\trees.config" />
@@ -328,18 +320,7 @@
     <Content Include="Config\BaseRestExtensions.config" />
     <Content Include="Config\applications.config" />
     <Content Include="Config\404handlers.config" />
-    <Content Include="Views\Overflow.cshtml" />
-    <Content Include="Views\Partials\umbBanner.cshtml" />
-    <Content Include="Views\Partials\umbContact.cshtml" />
-    <Content Include="Views\Partials\umbFeature.cshtml" />
-    <Content Include="Views\Partials\umbSocial.cshtml" />
-    <Content Include="Views\Partials\umbTextPage.cshtml" />
-    <Content Include="scripts\jquery-1.10.2.min.map" />
-    <Content Include="scripts\Overflow.min.js.map" />
-    <Content Include="css\font\fontawesome-webfont.eot" />
-    <Content Include="css\font\fontawesome-webfont.ttf" />
-    <Content Include="css\font\fontawesome-webfont.woff" />
-    <Content Include="css\font\FontAwesome.otf" />
+    <Content Include="Views\Home.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -370,34 +351,8 @@
     <Content Include="Config\Lang\ru-RU.user.xml" />
     <Content Include="Config\Lang\sv-SE.user.xml" />
     <Content Include="Config\Lang\zh-CN.user.xml" />
-    <Content Include="css\font\fontawesome-webfont.svg" />
-    <Content Include="css\ie\backgroundsize.min.htc" />
-    <Content Include="css\ie\html5shiv.js" />
-    <Content Include="css\ie\PIE.htc" />
-    <Content Include="css\ie\v8.css" />
-    <Content Include="css\images\arrow.svg" />
-    <Content Include="css\images\banner.svg" />
-    <Content Include="css\images\loader.gif" />
-    <Content Include="css\images\poptrox-closer.svg" />
-    <Content Include="css\images\poptrox-nav.svg" />
-    <Content Include="css\skel-noscript.css" />
-    <Content Include="css\style-mobile.css" />
-    <Content Include="css\style-narrow.css" />
-    <Content Include="css\style-normal.css" />
-    <Content Include="css\style-wide.css" />
-    <Content Include="css\style.css" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="images\bg-alt.jpg" />
-    <Content Include="images\bg.jpg" />
-    <Content Include="images\pic01.jpg" />
-    <Content Include="images\pic02.jpg" />
-    <Content Include="scripts\init.js" />
-    <Content Include="scripts\jquery.min.js" />
-    <Content Include="scripts\jquery.poptrox-2.2.js" />
-    <Content Include="scripts\Overflow.js" />
-    <Content Include="scripts\Overflow.min.js" />
-    <Content Include="scripts\skel.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -406,6 +361,13 @@
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+    <Folder Include="images\" />
+    <Folder Include="scripts\" />
+    <Folder Include="Views\MacroPartials\" />
+    <Folder Include="Views\Partials\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
