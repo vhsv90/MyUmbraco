@@ -60,6 +60,87 @@ namespace Umbraco.Web.PublishedContentModels
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 		}
+
+		///<summary>
+		/// Author: Author
+		///</summary>
+		[ImplementPropertyType("author")]
+		public string Author
+		{
+			get { return this.GetPropertyValue<string>("author"); }
+		}
+
+		///<summary>
+		/// Description
+		///</summary>
+		[ImplementPropertyType("description")]
+		public string Description
+		{
+			get { return this.GetPropertyValue<string>("description"); }
+		}
+
+		///<summary>
+		/// Favicon: Favicon of the Website
+		///</summary>
+		[ImplementPropertyType("favicon")]
+		public object Favicon
+		{
+			get { return this.GetPropertyValue("favicon"); }
+		}
+
+		///<summary>
+		/// keywords: Keywords of the page
+		///</summary>
+		[ImplementPropertyType("keywords")]
+		public string Keywords
+		{
+			get { return this.GetPropertyValue<string>("keywords"); }
+		}
+
+		///<summary>
+		/// Page Image: Open Graph Image Property
+		///</summary>
+		[ImplementPropertyType("pageImage")]
+		public object PageImage
+		{
+			get { return this.GetPropertyValue("pageImage"); }
+		}
+
+		///<summary>
+		/// Page Title
+		///</summary>
+		[ImplementPropertyType("pageTitle")]
+		public string PageTitle
+		{
+			get { return this.GetPropertyValue<string>("pageTitle"); }
+		}
+
+		///<summary>
+		/// Twitter Card
+		///</summary>
+		[ImplementPropertyType("twitterCard")]
+		public string TwitterCard
+		{
+			get { return this.GetPropertyValue<string>("twitterCard"); }
+		}
+
+		///<summary>
+		/// Twitter Image
+		///</summary>
+		[ImplementPropertyType("twitterImage")]
+		public object TwitterImage
+		{
+			get { return this.GetPropertyValue("twitterImage"); }
+		}
+
+		///<summary>
+		/// Twitter Title: Twitter Title
+		///</summary>
+		[ImplementPropertyType("twitterTitle")]
+		public string TwitterTitle
+		{
+			get { return this.GetPropertyValue<string>("twitterTitle"); }
+		}
 	}
 
 	/// <summary>Folder</summary>

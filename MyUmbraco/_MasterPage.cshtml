@@ -1,4 +1,4 @@
-﻿@using ContentModels = Umbraco.Web.PublishedContentModels;
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -10,40 +10,37 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>My Umbraco</title>
+    <title>My Umbraco - @CurrentPage.Name</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Umbraco Stateside template" />
-    <meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
-    <meta name="author" content="Stateside" />
+    <meta name="description" content="@CurrentPage.GetPropertyValue("description")"/>
+    <meta name="keywords" content="@CurrentPage.GetPropertyValue("keywords")"/>
+    <meta name="author" content="@CurrentPage.GetPropertyValue("author")"/>
 
-    <meta property="og:title" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <meta property="og:description" content="" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
+    <meta property="og:title" content="@CurrentPage.GetPropertyValue("pageTitle")"/>
+    <meta property="og:image" content="@CurrentPage.GetPropertyValue("pageImage")"/>
+    <meta property="og:url" content="@HttpContext.Current.Request.Url.Host@CurrentPage.Url"/>
+    <meta property="og:description" content="@CurrentPage.GetPropertyValue("description")"/>
+
+    <meta name="twitter:title" content="@CurrentPage.GetPropertyValue("twitterTitle")"/>
+    <meta name="twitter:image" content="@CurrentPage.GetPropertyValue("twitterImage")"/>
+    <meta name="twitter:url" content="@HttpContext.Current.Request.Url.Host@CurrentPage.Url"/>
+    <meta name="twitter:card" content="@CurrentPage.GetPropertyValue("twitterCard")"/>
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="@Umbraco.TypedMedia(CurrentPage.GetPropertyValue("favicon")).Url">
+    
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-
-    <!-- Animate.css -->
     <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="css/icomoon.css">
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Superfish -->
     <link rel="stylesheet" href="css/superfish.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="scripts/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
-        <script src="js/respond.min.js"></script>
+        <script src="scripts/respond.min.js"></script>
     <![endif]-->
 </head>
 
@@ -336,7 +333,14 @@
     </div>
 </div>
 
-    
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery.easing.1.3.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.waypoints.min.js"></script>
+    <script src="scripts/jquery.stellar.min.js"></script>
+    <script src="scripts/hoverIntent.js"></script>
+    <script src="scripts/superfish.js"></script>
+    <script src="scripts/main.js"></script>
 
 
 </body>
