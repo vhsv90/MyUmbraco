@@ -313,6 +313,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
     <Content Include="css\animate.css" />
     <Content Include="css\bootstrap.css">
       <DependentUpon>bootstrap.scss</DependentUpon>
@@ -329,6 +332,7 @@
     </Content>
     <Content Include="css\superfish.css" />
     <Content Include="fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\icomoon\icomoon.svg" />
     <Content Include="fonts\icomoon\icomoon\demo-files\demo.css" />
     <Content Include="fonts\icomoon\icomoon\demo-files\demo.js" />
@@ -352,15 +356,20 @@
     <Content Include="images\work-6.jpg" />
     <Content Include="packages.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
     <Content Include="scripts\google_map.js" />
     <Content Include="scripts\hoverIntent.js" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
     <Content Include="scripts\jquery.easing.1.3.js" />
     <Content Include="scripts\jquery.min.js" />
     <Content Include="scripts\jquery.stellar.min.js" />
     <Content Include="scripts\jquery.waypoints.min.js" />
     <Content Include="scripts\magnific-popup-options.js" />
     <Content Include="scripts\main.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="scripts\modernizr-2.6.2.min.js" />
     <Content Include="scripts\respond.min.js" />
     <Content Include="scripts\superfish.js" />
@@ -475,6 +484,11 @@
     <Content Include="fonts\icomoon\icomoon\fonts\icomoon.ttf" />
     <Content Include="fonts\icomoon\icomoon\fonts\icomoon.woff" />
     <Content Include="fonts\icomoon\icomoon\selection.json" />
+    <Content Include="Views\Partials\_Footer.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -517,7 +531,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\MacroPartials\" />
-    <Folder Include="Views\Partials\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
