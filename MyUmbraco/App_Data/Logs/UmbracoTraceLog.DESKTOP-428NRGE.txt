@@ -34,3 +34,5 @@
  2016-08-11 11:12:38,591 [P42056/D2/T15] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: victor.s@wearestateside.com logged in from IP address ::1
  2016-08-11 11:12:38,867 [P42056/D2/T18] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
  2016-08-11 11:12:38,915 [P42056/D2/T18] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 47ms)
+ 2016-08-11 11:32:15,342 [P42056/D2/T31] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: victor.s@wearestateside.com, IP Address: ::1
+ 2016-08-11 15:11:18,182 [P42056/D2/T29] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-08-10 15:11:18
